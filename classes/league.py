@@ -214,11 +214,11 @@ class League:
 
                     if 'D/ST' in player_str:
                         player_name = player_str.split(' ')[0] + ' d_st'
-                        player_team = team_abbrivations[player_str.split(' ')[0]]
+                        player_team = team_abbreviations[player_str.split(' ')[0]]
                         player_pos = 'd_st'
                     elif 'Coach' in player_str:
                         player_name = player_str
-                        player_team = team_abbrivations[player_str.split(' ')[0]]
+                        player_team = team_abbreviations[player_str.split(' ')[0]]
                         player_pos = 'coach'
                     elif 'TQB' in player_str:
                         self.draft_type = 'TQB'
@@ -261,7 +261,7 @@ class League:
 
 
 
-team_abbrivations = {
+team_abbreviations = {
     'Cardinals': 'ari',
     'Falcons': 'atl',
     'Ravens': 'bal',
